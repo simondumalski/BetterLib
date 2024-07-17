@@ -1,5 +1,6 @@
 package me.simondumalski.betterlib.commands;
 
+import me.simondumalski.betterlib.BetterLib;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -10,15 +11,7 @@ public abstract class Subcommand {
     /**
      * Instance of the main plugin class
      */
-    protected static JavaPlugin plugin;
-
-    /**
-     * Initializes the subcommand class
-     * @param plugin Instance of the main plugin class
-     */
-    public static void init(JavaPlugin plugin) {
-        Subcommand.plugin = plugin;
-    }
+    protected static JavaPlugin plugin = BetterLib.plugin;
 
     /**
      * Gets the name of the subcommand
