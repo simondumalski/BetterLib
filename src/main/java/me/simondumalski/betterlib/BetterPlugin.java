@@ -8,13 +8,15 @@ public abstract class BetterPlugin extends JavaPlugin {
     /**
      * SmartInvs API inventory manager
      */
-    private final InventoryManager inventoryManager = new InventoryManager(BetterLib.plugin);
+    private final InventoryManager inventoryManager;
 
     /**
      * Default constructor for the better plugin class
      */
-    public BetterPlugin() {
+    public BetterPlugin(JavaPlugin plugin) {
         super();
+        BetterLib.init(plugin);
+        inventoryManager = new InventoryManager(BetterLib.plugin);
         inventoryManager.init();
         System.out.println("TEST TEST TEST");
     }
