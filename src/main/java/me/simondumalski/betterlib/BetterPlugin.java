@@ -15,6 +15,7 @@ public abstract class BetterPlugin extends JavaPlugin {
      */
     public BetterPlugin() {
         inventoryManager.init();
+        System.out.println("TEST TEST TEST");
     }
 
     /**
