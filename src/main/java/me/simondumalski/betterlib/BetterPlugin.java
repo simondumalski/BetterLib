@@ -10,11 +10,11 @@ public abstract class BetterPlugin extends JavaPlugin {
      */
     private final InventoryManager inventoryManager = new InventoryManager(BetterLib.plugin);
 
-    @Override
-    public void onEnable() {
-
+    /**
+     * Default constructor for the better plugin class
+     */
+    public BetterPlugin() {
         inventoryManager.init();
-
     }
 
     /**
