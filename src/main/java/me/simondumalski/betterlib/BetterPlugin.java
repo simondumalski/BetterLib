@@ -14,6 +14,7 @@ public abstract class BetterPlugin extends JavaPlugin {
      * Default constructor for the better plugin class
      */
     public BetterPlugin() {
+        super();
         inventoryManager.init();
         System.out.println("TEST TEST TEST");
     }
